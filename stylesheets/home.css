@@ -61,22 +61,22 @@
     opacity: 1;
 }
 .container .slider .slide.slide1 {
-    background: url(/images/girl_news.jpg);
+    background: url(../images/girl_news.jpg);
     background-size: cover;
     background-position: center;
 }
 .container .slider .slide.slide2 {
-    background: url(/images/neighbourhood/neighbourhood_news.jpg);
+    background: url(../images/neighbourhood/neighbourhood_news.jpg);
     background-size: cover;
     background-position: center;
 }
 .container .slider .slide.slide3 {
-    background: url(/images/monkeys_news.jpg);
+    background: url(../images/monkeys_news.jpg);
     background-size: cover;
     background-position: center;
 }
 .container .slider .slide.slide4 {
-    background: url(/images/aurora_news.jpg);
+    background: url(../images/aurora_news.jpg);
     background-size: cover;
     background-position: center;
 }
