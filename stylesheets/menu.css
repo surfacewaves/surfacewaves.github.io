@@ -1,0 +1,130 @@
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #1C1C1A;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+}
+.navigation.active {
+    visibility: visible;
+    opacity: 1;
+}
+.navigation .navArea {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation .navArea ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+.navigation .navArea ul li:nth-child(1) {
+     margin-bottom: 25px;
+ }
+.navigation .navArea ul li a {
+    position: relative;
+    text-decoration: none;
+    font-size: 2.5em;
+    color: #DDDDDD;
+    opacity: 0.5;
+}
+.navigation .navArea ul li:hover a {
+    opacity: 1;
+}
+.navigation .navArea ul li:nth-child(1) a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: #DDDDDD;
+    z-index: 10;
+}
+.imgArea {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    opacity: 0.8;
+}
+.imgArea img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menuToggle {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    background: rgba(221, 221, 221, 0.5) url("/images/menu.png");
+    z-index: 100;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    filter: invert(1);
+}
+.menuToggle.active {
+    background: rgba(221, 221, 221, 0.5) url("/images/close.png");
+    z-index: 100;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(1);
+}
+header {
+    width: 100%;
+    height: 50px;
+    background: #1C1C1A;
+    position: fixed;
+    z-index: 100;
+    opacity: 0.5;
+}
+header.active {
+    visibility: hidden;
+    opacity: 0;
+}
+header h2 {
+    font-size: 30px;
+    padding: 8px;
+}
+
+@media (max-width: 768px) {
+    .navigation .navArea {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+    .navigation .navArea ul li {
+
+    }
+    .navigation .navArea ul li a {
+        opacity: 0.8;
+    }
+    .imgArea {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        opacity: 0.5;
+    }
+    .menuToggle {
+        top: 10px;
+        right: 10px;
+    }
+}

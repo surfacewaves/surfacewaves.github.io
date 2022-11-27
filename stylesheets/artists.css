@@ -1,0 +1,214 @@
+/*Заглавная картинка страницы*/
+.review {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.review .imgBox {
+    padding: 10px 0;
+    width: 75%;
+    height: 100%;
+}
+.review .imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Основной текст*/
+.content {
+    width: 100%;
+    padding-bottom: 50px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.content .about {
+    width: 75%;
+    display: flex;
+}
+.content .about .name {
+    width: 35%;
+    padding-top: 10px;
+    margin-right: 30px;
+}
+.content .about .name h2 {
+    font-size: 4.5vw;
+    text-transform: uppercase;
+    word-spacing: -0.4em;
+}
+.content .about .information {
+    width: 65%;
+    padding: 20px 0;
+}
+.content .about .information p {
+    font-size: 20px;
+    line-height: 1.3em;
+    letter-spacing: -0.02em;
+    vertical-align: baseline;
+}
+
+/*Мозаика альбомов*/
+.mozaic {
+    width: 100%;
+    height: auto;
+    padding: 0 50px 0 60px;
+    background: #1C1C1A;
+}
+.clear { /*из за float элементов высота не расчитывается по содержимому, тут очистка (смотреть https://habr.com/ru/post/136588/)*/
+    clear: both;
+    display: block;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    font-size: 0;
+}
+.elements {
+    height: 100%;
+}
+.mozaic .element {
+    width: calc(26vw - 50px);
+    height: calc(26vw - 50px);
+    float: left;
+    position: relative;
+}
+.mozaic .element:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mozaic .element:nth-child(1) h2 {
+    text-transform: uppercase;
+    font-size: 3vw;
+}
+.mozaic .element .imgClick {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.mozaic .element .imgClick img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Всплывающая информация об альбоме*/
+.shadow {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: #111;
+    visibility: hidden;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.shadow.active {
+    visibility: visible;
+}
+.mozaic .element .window {
+    height: auto;
+    width: 40vw;
+    position: fixed;
+    top: 10%;
+    left: 30%;
+    background: #1C1C1A;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    z-index: 10;
+}
+.mozaic .element .window.active {
+    visibility: visible;
+}
+.mozaic .element .window .albumInformation {
+    display: flex;
+}
+.mozaic .element .window .albumInformation .imgAlbum {
+    width: 112px;
+    height: 112px;
+}
+.mozaic .element .window .albumInformation .imgAlbum img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mozaic .element .window .albumInformation .text {
+    width: 80%;
+    padding: 10px 0 0 30px;
+}
+.mozaic .element .window .albumInformation .text h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.mozaic .element .window .albumInformation .text .link {
+    display: flex;
+    margin-top: 15px;
+}
+.mozaic .element .window .albumInformation .text .link img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    filter: invert(0.5);
+}
+.mozaic .element .window .albumInformation .text .link h4 {
+    padding: 5px 0 0 10px;
+}
+.mozaic .element .window .albumInformation .close {
+    width: 30px;
+    height: 30px;
+    background: rgba(221, 221, 221, 0.5) url("/images/close.png");
+    z-index: 100;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    filter: invert(1);
+}
+.mozaic .element .window .trackList ul {
+    padding: 20px 0 20px 55px;
+}
+.mozaic .element .window .trackList ul li {
+    list-style: decimal-leading-zero;
+    line-height: 1.6em;
+    font-size: 1.2vw;
+}
+.mozaic .element .window .trackList ul li span {
+    font-size: 12px;
+}
+
+/*Адаптация*/
+@media (max-width: 768px) {
+    .review {
+        height: 40vh;
+    }
+    .content .about {
+        flex-direction: column;
+    }
+    .content .about .name {
+        height: 36px;
+    }
+    .content .about .information {
+        width: 100%;
+    }
+    .content .about .information p {
+        font-size: 18px;
+    }
+    .mozaic .element {
+        width: calc(47vw - 50px);
+        height: calc(47vw - 50px);
+    }
+    .mozaic .element .window {
+        width: 70vw;
+        top: 10%;
+        left: 15%;
+    }
+    .mozaic .element .window .trackList ul li {
+        line-height: 1.5em;
+        font-size: 14px;
+    }
+}

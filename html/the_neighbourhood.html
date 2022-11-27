@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World of music</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/base.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/menu.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/artists.css">
+  <script src="/scripts/script.js"></script>
+</head>
+<body>
+<header class="line">
+  <h2>WM</h2>
+</header>
+<div class="menuToggle" onclick="toggleMenu()"></div>
+<div class="navigation">
+  <div class="navArea">
+    <ul>
+      <li><a href="../home.html" onmouseenter="changeImage('/images/home.jpg')">Home</a></li>
+      <li><a href="lana_del_rey.html" onmouseenter="changeImage('/images/lana_del_rey/lana.jpg')">lana del rey</a></li>
+      <li><a href="the_neighbourhood.html" onmouseenter="changeImage('/images/neighbourhood/neighbourhood.jpg')">the neighbourhood</a></li>
+      <li><a href="#" onmouseenter="changeImage('/images/girl.jpg')">girl in red</a></li>
+      <li><a href="#" onmouseenter="changeImage('/images/monkeys.jpg')">arctic monkeys</a></li>
+      <li><a href="#" onmouseenter="changeImage('/images/mitski.jpg')">mitski</a></li>
+      <li><a href="#" onmouseenter="changeImage('/images/aurora.jpg')">aurora</a></li>
+    </ul>
+  </div>
+  <div class="imgArea">
+    <img src="/images/home.jpg" id="slider">
+  </div>
+</div>
+<section class="review">
+  <div class="imgBox">
+    <img src="/images/neighbourhood/neighbourhood_page.jpg">
+  </div>
+</section>
+<section class="content">
+  <div class="about">
+    <div class="name">
+      <h2>About NBHD</h2>
+    </div>
+    <div class="information">
+      <p>An American musical group playing in the genre of alternative rock and founded in the California city of Thousand
+        Oaks in 2011. The band consists of vocalist Jesse Rutherford, guitarists Jeremy Friedman and Zach Ebels, bassist
+        Mikey Morgoth and drummer Brandon Fried.</p><br>
+      <p>The Neighborhood's musical style has been described as alternative rock, indie rock, indie pop, pop rock, with
+        elements of electronica, hip hop, pop, and R&B. The composition of The Neighborhood is childhood friends, all
+        hailing from the same American city.</p><br>
+    </div>
+  </div>
+</section>
+<div class="shadow">
+
+</div>
+<section class="mozaic">
+  <div class="elements">
+    <div class="element">
+      <h2>Albums</h2>
+    </div>
+    <div class="element">
+      <div class="imgClick">
+        <img src="/images/neighbourhood/love.jpg" class="button button1" onclick="toggleAlbum(1)">
+      </div>
+      <div class="window window1">
+        <div class="albumInformation">
+          <div class="imgAlbum">
+            <img src="/images/neighbourhood/love.jpg">
+          </div>
+          <div class="text">
+            <h2>I Love You.</h2>
+            <h4>April 22, 2013</h4>
+            <div class="link">
+              <a href="https://music.apple.com/us/album/i-love-you/635016635">
+                <img src="/images/music.png">
+              </a>
+              <h4>Link to Apple Music</h4>
+            </div>
+          </div>
+          <div class="close" onclick="toggleAlbum(1)"></div>
+        </div>
+        <div class="trackList">
+          <ul>
+            <li>How</li>
+            <li>Afraid</li>
+            <li>Everybody's Watching me (Uh Oh)</li>
+            <li>Sweater Weather</li>
+            <li>Let It Go</li>
+            <li>Alleyways</li>
+            <li>W.D.Y.W.F.M?</li>
+            <li>Flawless</li>
+            <li>Female Robbery</li>
+            <li>Staying Up</li>
+            <li>Float</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="element">
+    </div>
+    <div class="element">
+      <div class="imgClick">
+        <img src="/images/neighbourhood/0f.jpg" class="button button2" onclick="toggleAlbum(2)">
+      </div>
+      <div class="window window2">
+        <div class="albumInformation">
+          <div class="imgAlbum">
+            <img src="/images/neighbourhood/0f.jpg">
+          </div>
+          <div class="text">
+            <h2>#000000 & #FFFFFF</h2>
+            <h4>November 28, 2014</h4>
+            <div class="link">
+              <a href="https://music.apple.com/us/album/000000-ffffff/1316105951">
+                <img src="/images/music.png">
+              </a>
+              <h4>Link to Apple Music</h4>
+            </div>
+          </div>
+          <div class="close" onclick="toggleAlbum(2)"></div>
+        </div>
+        <div class="trackList">
+          <ul>
+            <li>*NSTYNCT (feat. Skeme & OG Maco)</li>
+            <li>Lurk</li>
+            <li>warm (feat. Raury)</li>
+            <li>Jealou$y (feat. Casey Veggies & Kossisko)</li>
+            <li>1 of those Weaks</li>
+            <li>Dangerous (feat. YG)</li>
+            <li>YG call</li>
+            <li>When I Get Back (feat. G-Eazy)</li>
+            <li>To</li>
+            <li>Rain</li>
+            <li>#icanteven (feat. French Montana)</li>
+            <li>U&I</li>
+            <li>Givin & Takin (feat. Danny Seth & DeJ Loaf)</li>
+            <li>Unfair</li>
+            <li>Silver</li>
+            <li>T$Rl</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="element">
+      <div class="imgClick">
+        <img src="/images/neighbourhood/wiped.jpg" class="button button3" onclick="toggleAlbum(3)">
+      </div>
+      <div class="window window3">
+        <div class="albumInformation">
+          <div class="imgAlbum">
+            <img src="/images/neighbourhood/wiped.jpg">
+          </div>
+          <div class="text">
+            <h2>Wiped Out!</h2>
+            <h4>October 30, 2015</h4>
+            <div class="link">
+              <a href="https://music.apple.com/us/album/wiped-out/1030115907">
+                <img src="/images/music.png">
+              </a>
+              <h4>Link to Apple Music</h4>
+            </div>
+          </div>
+          <div class="close" onclick="toggleAlbum(3)"></div>
+        </div>
+        <div class="trackList">
+          <ul>
+            <li>A Moment of Silence</li>
+            <li>Prey</li>
+            <li>Cry Baby</li>
+            <li>JWiped Out!</li>
+            <li>The Beach</li>
+            <li>Daddy Issues</li>
+            <li>Baby Came Home 2 / Valentines</li>
+            <li>Greetings from Califournia</li>
+            <li>Ferrari</li>
+            <li>Single</li>
+            <li>R.I.P. 2 My Youth</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="element">
+    </div>
+    <div class="element">
+      <div class="imgClick">
+        <img src="/images/neighbourhood/hard.jpg" class="button button4" onclick="toggleAlbum(4)">
+      </div>
+      <div class="window window4">
+        <div class="albumInformation">
+          <div class="imgAlbum">
+            <img src="/images/neighbourhood/hard.jpg">
+          </div>
+          <div class="text">
+            <h2>Hard To Imagine The Neighbourhood Ever Changing</h2>
+            <h4>November 2, 2018</h4>
+            <div class="link">
+              <a href="https://music.apple.com/us/album/hard-to-imagine-the-neighbourhood-ever-changing/1440532502">
+                <img src="/images/music.png">
+              </a>
+              <h4>Link to Apple Music</h4>
+            </div>
+          </div>
+          <div class="close" onclick="toggleAlbum(4)"></div>
+        </div>
+        <div class="trackList">
+          <ul>
+            <li>Dust</li>
+            <li>Kill Us All (feat. Denzel Curry)</li>
+            <li>24/7</li>
+            <li>Scary Love</li>
+            <li>Softcore</li>
+            <li>Void</li>
+            <li>Roll Call</li>
+            <li>Livin' in a Dream (feat. Nipsey Hussle)</li>
+            <li>You Get Me so High</li>
+            <li>Reflections</li>
+            <li>Blue</li>
+            <li>Paradise</li>
+            <li>Beat Take 1 (feat. Ghostfaace Killah)</li>
+            <li>Stuck with Me</li>
+            <li>Flowers</li>
+            <li>Compass</li>
+            <li>Noise</li>
+            <li>Heaven</li>
+            <li>Nervous</li>
+            <li>Sadderdaze</li>
+            <li>Beautiful Oblivion (feat. IDK)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="element">
+    </div>
+    <div class="element">
+    </div>
+    <div class="element">
+      <div class="imgClick">
+        <img src="/images/neighbourhood/chip.jpg" class="button button5" onclick="toggleAlbum(5)">
+      </div>
+      <div class="window window5">
+        <div class="albumInformation">
+          <div class="imgAlbum">
+            <img src="/images/neighbourhood/chip.jpg">
+          </div>
+          <div class="text">
+            <h2>Chip Chrome & The Mono-Tones</h2>
+            <h4>September 25, 2020</h4>
+            <div class="link">
+              <a href="https://music.apple.com/us/album/chip-chrome-the-mono-tones/1525010103">
+                <img src="/images/music.png">
+              </a>
+              <h4>Link to Apple Music</h4>
+            </div>
+          </div>
+          <div class="close" onclick="toggleAlbum(5)"></div>
+        </div>
+        <div class="trackList">
+          <ul>
+            <li>Chip Chrome</li>
+            <li>Pretty Boy</li>
+            <li>Lost in Translation</li>
+            <li>Devil's Advocate</li>
+            <li>Hell or High Water</li>
+            <li>Cherry Flavoured</li>
+            <li>The Mono-Tones</li>
+            <li>BooHoo</li>
+            <li>Silver Lining</li>
+            <li>Tobacco Sunburst</li>
+            <li>Middle of Somewhere</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br class='clear'>
+  </div>
+</section>
+</body>
+</html>
