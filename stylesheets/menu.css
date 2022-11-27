@@ -99,6 +99,7 @@ header.active {
 header h2 {
     font-size: 30px;
     padding: 8px;
+    cursor: default;
 }
 
 @media (max-width: 768px) {
