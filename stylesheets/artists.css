@@ -198,9 +198,13 @@
     .content .about .information p {
         font-size: 18px;
     }
+    .mozaic {
+        padding: 0 10px;
+    }
     .mozaic .element {
-        width: calc(47vw - 50px);
-        height: calc(47vw - 50px);
+        width: calc(52vw - 20px);
+        height: calc(52vw - 20px);
+        padding: 1px;
     }
     .mozaic .element .window {
         width: 70vw;
