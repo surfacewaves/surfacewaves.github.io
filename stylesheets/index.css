@@ -60,7 +60,7 @@
 }
 .welcome .word {
     position: absolute;
-    z-index: 10;
+    z-index: 9;
     opacity: 0;
     visibility: hidden;
     animation: open_word 2.5s ease-in-out;
