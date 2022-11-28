@@ -12,155 +12,159 @@
   <script src="/scripts/script.js"></script>
 </head>
 <body>
-<header class="line">
-  <h2>WM</h2>
+  <header class="line">
+  <div class="logo">
+    <a href="index.html"><h2>WM</h2></a>
+  </div>
 </header>
-<div class="menuToggle" onclick="toggleMenu()"></div>
-<div class="navigation">
-  <div class="navArea">
-    <ul>
-      <li><a href="../index.html" onmouseenter="changeImage('/images/home.jpg')">Home</a></li>
-      <li><a href="lana_del_rey.html" onmouseenter="changeImage('/images/lana_del_rey/lana.jpg')">lana del rey</a></li>
-      <li><a href="the_neighbourhood.html" onmouseenter="changeImage('/images/neighbourhood/neighbourhood.jpg')">the neighbourhood</a></li>
-      <li><a href="girl_in_red.html" onmouseenter="changeImage('/images/girl.jpg')">girl in red</a></li>
-      <li><a href="arctic_monkeys.html" onmouseenter="changeImage('/images/arctic_monkeys/monkeys.jpg')">arctic monkeys</a></li>
-      <li><a href="mitski.html" onmouseenter="changeImage('/images/mitski/mitski.jpg')">mitski</a></li>
-      <li><a href="aurora.html" onmouseenter="changeImage('/images/aurora/aurora.jpg')">aurora</a></li>
-    </ul>
-  </div>
-  <div class="imgArea">
-    <img src="/images/home.jpg" id="slider">
-  </div>
-</div>
-<section class="review">
-  <div class="imgBox">
-    <img src="/images/girl_in_red/girl_in_red_page.jpg">
-  </div>
-</section>
-<section class="content">
-  <div class="about">
-    <div class="name">
-      <h2>About Girl</h2>
-    </div>
-    <div class="information">
-      <p>Girl in Red is an indie pop music project by Norwegian singer and producer Marie Ulven Ringheim.</p><br>
-      <p>Active users of TikTok have repeatedly encountered the mention of hits by a young Norwegian indie pop singer
-        hiding under the pseudonym girl in red. In the middle of 2020, on this service, the performer became a popular
-        symbol of queer identification, and the question "Do you listen to the Girl in red?" was not asked at all to
-        find out about musical preferences.</p>
-    </div>
-  </div>
-</section>
-<div class="shadow">
+  <div class="menuToggle" onclick="toggleMenu()">
 
-</div>
-<section class="mozaic">
-  <div class="elements">
-    <div class="element">
-      <h2>Albums</h2>
-    </div>
-    <div class="element">
-      <div class="imgClick">
-        <img src="/images/girl_in_red/chapter.jpg" class="button button1" onclick="toggleAlbum(1)">
-      </div>
-      <div class="window window1">
-        <div class="albumInformation">
-          <div class="imgAlbum">
-            <img src="/images/girl_in_red/chapter.jpg">
-          </div>
-          <div class="text">
-            <h2>Chapter 1</h2>
-            <h4>September 14, 2018</h4>
-            <div class="link">
-              <a href="https://music.apple.com/om/album/chapter-1-ep/1446460590">
-                <img src="/images/music.png">
-              </a>
-              <h4>Link to Apple Music</h4>
-            </div>
-          </div>
-          <div class="close" onclick="toggleAlbum(1)"></div>
-        </div>
-        <div class="trackList">
-          <ul>
-            <li>i wanna be your girlfriend</li>
-            <li>say anything</li>
-            <li>summer depression</li>
-            <li>4am</li>
-            <li>girls</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="element">
-    </div>
-    <div class="element">
-      <div class="imgClick">
-        <img src="/images/girl_in_red/october.png" class="button button2" onclick="toggleAlbum(2)">
-      </div>
-      <div class="window window2">
-        <div class="albumInformation">
-          <div class="imgAlbum">
-            <img src="/images/girl_in_red/october.png">
-          </div>
-          <div class="text">
-            <h2>we fell in love in october</h2>
-            <h4>November 21, 2018</h4>
-            <div class="link">
-              <a href="https://music.apple.com/om/album/we-fell-in-love-in-october-forget-her-single/1441416633">
-                <img src="/images/music.png">
-              </a>
-              <h4>Link to Apple Music</h4>
-            </div>
-          </div>
-          <div class="close" onclick="toggleAlbum(2)"></div>
-        </div>
-        <div class="trackList">
-          <ul>
-            <li>We Fell in Love in October</li>
-            <li>Forget Her</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="element">
-      <div class="imgClick">
-        <img src="/images/girl_in_red/quiet.jpg" class="button button3" onclick="toggleAlbum(3)">
-      </div>
-      <div class="window window3">
-        <div class="albumInformation">
-          <div class="imgAlbum">
-            <img src="/images/girl_in_red/quiet.jpg">
-          </div>
-          <div class="text">
-            <h2>if i could make it go quiet</h2>
-            <h4>April 30, 2021</h4>
-            <div class="link">
-              <a href="https://music.apple.com/om/album/if-i-could-make-it-go-quiet-apple-music-edition/1563888210">
-                <img src="/images/music.png">
-              </a>
-              <h4>Link to Apple Music</h4>
-            </div>
-          </div>
-          <div class="close" onclick="toggleAlbum(3)"></div>
-        </div>
-        <div class="trackList">
-          <ul>
-            <li>Serotonin</li>
-            <li>Did You Come?</li>
-            <li>Body And Mind</li>
-            <li>hornylovesickmess</li>
-            <li>midnight love</li>
-            <li>You Stupid Bitch</li>
-            <li>Rue</li>
-            <li>Apartment 402</li>
-            <li>I'll Call You Mine</li>
-            <li>it would be feel like this</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <br class='clear'>
   </div>
-</section>
+  <div class="navigation">
+    <div class="navArea">
+      <ul>
+        <li><a href="home.html" onmouseenter="changeImage('/images/home.jpg')">Home</a></li>
+        <li><a href="lana_del_rey.html" onmouseenter="changeImage('/images/lana_del_rey/lana.jpg')">lana del rey</a></li>
+        <li><a href="the_neighbourhood.html" onmouseenter="changeImage('/images/neighbourhood/neighbourhood.jpg')">the neighbourhood</a></li>
+        <li><a href="girl_in_red.html" onmouseenter="changeImage('/images/girl.jpg')">girl in red</a></li>
+        <li><a href="arctic_monkeys.html" onmouseenter="changeImage('/images/arctic_monkeys/monkeys.jpg')">arctic monkeys</a></li>
+        <li><a href="mitski.html" onmouseenter="changeImage('/images/mitski/mitski.jpg')">mitski</a></li>
+        <li><a href="aurora.html" onmouseenter="changeImage('/images/aurora/aurora.jpg')">aurora</a></li>
+      </ul>
+    </div>
+    <div class="imgArea">
+      <img src="/images/home.jpg" id="slider">
+    </div>
+  </div>
+  <section class="review">
+    <div class="imgBox">
+      <img src="/images/girl_in_red/girl_in_red_page.jpg">
+    </div>
+  </section>
+  <section class="content">
+    <div class="about">
+      <div class="name">
+        <h2>About Girl</h2>
+      </div>
+      <div class="information">
+        <p>Girl in Red is an indie pop music project by Norwegian singer and producer Marie Ulven Ringheim.</p><br>
+        <p>Active users of TikTok have repeatedly encountered the mention of hits by a young Norwegian indie pop singer
+          hiding under the pseudonym girl in red. In the middle of 2020, on this service, the performer became a popular
+          symbol of queer identification, and the question "Do you listen to the Girl in red?" was not asked at all to
+          find out about musical preferences.</p>
+      </div>
+    </div>
+  </section>
+  <div class="shadow">
+
+  </div>
+  <section class="mozaic">
+    <div class="elements">
+      <div class="element">
+        <h2>Albums</h2>
+      </div>
+      <div class="element">
+        <div class="imgClick">
+          <img src="/images/girl_in_red/chapter.jpg" class="button button1" onclick="toggleAlbum(1)">
+        </div>
+        <div class="window window1">
+          <div class="albumInformation">
+            <div class="imgAlbum">
+              <img src="/images/girl_in_red/chapter.jpg">
+            </div>
+            <div class="text">
+              <h2>Chapter 1</h2>
+              <h4>September 14, 2018</h4>
+              <div class="link">
+                <a href="https://music.apple.com/om/album/chapter-1-ep/1446460590">
+                  <img src="/images/music.png">
+                </a>
+                <h4>Link to Apple Music</h4>
+              </div>
+            </div>
+            <div class="close" onclick="toggleAlbum(1)"></div>
+          </div>
+          <div class="trackList">
+            <ul>
+              <li>i wanna be your girlfriend</li>
+              <li>say anything</li>
+              <li>summer depression</li>
+              <li>4am</li>
+              <li>girls</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="element">
+      </div>
+      <div class="element">
+        <div class="imgClick">
+          <img src="/images/girl_in_red/october.png" class="button button2" onclick="toggleAlbum(2)">
+        </div>
+        <div class="window window2">
+          <div class="albumInformation">
+            <div class="imgAlbum">
+              <img src="/images/girl_in_red/october.png">
+            </div>
+            <div class="text">
+              <h2>we fell in love in october</h2>
+              <h4>November 21, 2018</h4>
+              <div class="link">
+                <a href="https://music.apple.com/om/album/we-fell-in-love-in-october-forget-her-single/1441416633">
+                  <img src="/images/music.png">
+                </a>
+                <h4>Link to Apple Music</h4>
+              </div>
+            </div>
+            <div class="close" onclick="toggleAlbum(2)"></div>
+          </div>
+          <div class="trackList">
+            <ul>
+              <li>We Fell in Love in October</li>
+              <li>Forget Her</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="element">
+        <div class="imgClick">
+          <img src="/images/girl_in_red/quiet.jpg" class="button button3" onclick="toggleAlbum(3)">
+        </div>
+        <div class="window window3">
+          <div class="albumInformation">
+            <div class="imgAlbum">
+              <img src="/images/girl_in_red/quiet.jpg">
+            </div>
+            <div class="text">
+              <h2>if i could make it go quiet</h2>
+              <h4>April 30, 2021</h4>
+              <div class="link">
+                <a href="https://music.apple.com/om/album/if-i-could-make-it-go-quiet-apple-music-edition/1563888210">
+                  <img src="/images/music.png">
+                </a>
+                <h4>Link to Apple Music</h4>
+              </div>
+            </div>
+            <div class="close" onclick="toggleAlbum(3)"></div>
+          </div>
+          <div class="trackList">
+            <ul>
+              <li>Serotonin</li>
+              <li>Did You Come?</li>
+              <li>Body And Mind</li>
+              <li>hornylovesickmess</li>
+              <li>midnight love</li>
+              <li>You Stupid Bitch</li>
+              <li>Rue</li>
+              <li>Apartment 402</li>
+              <li>I'll Call You Mine</li>
+              <li>it would be feel like this</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br class='clear'>
+    </div>
+  </section>
 </body>
 </html>

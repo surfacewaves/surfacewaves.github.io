@@ -203,8 +203,8 @@
         padding: 0 10px;
     }
     .mozaic .element {
-        width: calc(52vw - 20px);
-        height: calc(52vw - 20px);
+        width: calc(50vw - 20px);
+        height: calc(50vw - 20px);
         padding: 1px;
     }
     .mozaic .element .window {

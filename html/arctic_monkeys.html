@@ -12,336 +12,340 @@
   <script src="/scripts/script.js"></script>
 </head>
 <body>
-<header class="line">
-  <h2>WM</h2>
+  <header class="line">
+  <div class="logo">
+    <a href="index.html"><h2>WM</h2></a>
+  </div>
 </header>
-<div class="menuToggle" onclick="toggleMenu()"></div>
-<div class="navigation">
-  <div class="navArea">
-    <ul>
-      <li><a href="../index.html" onmouseenter="changeImage('/images/home.jpg')">Home</a></li>
-      <li><a href="lana_del_rey.html" onmouseenter="changeImage('/images/lana_del_rey/lana.jpg')">lana del rey</a></li>
-      <li><a href="the_neighbourhood.html" onmouseenter="changeImage('/images/neighbourhood/neighbourhood.jpg')">the neighbourhood</a></li>
-      <li><a href="girl_in_red.html" onmouseenter="changeImage('/images/girl_in_red/girl.jpg')">girl in red</a></li>
-      <li><a href="arctic_monkeys.html" onmouseenter="changeImage('/images/monkeys.jpg')">arctic monkeys</a></li>
-      <li><a href="mitski.html" onmouseenter="changeImage('/images/mitski.jpg')">mitski</a></li>
-      <li><a href="aurora.html" onmouseenter="changeImage('/images/aurora.jpg')">aurora</a></li>
-    </ul>
-  </div>
-  <div class="imgArea">
-    <img src="/images/home.jpg" id="slider">
-  </div>
-</div>
-<section class="review">
-  <div class="imgBox">
-    <img src="/images/arctic_monkeys/arctic_monkeys_page.jpg">
-  </div>
-</section>
-<section class="content">
-  <div class="about">
-    <div class="name">
-      <h2>About Monkeys</h2>
-    </div>
-    <div class="information">
-      <p>British rock band formed in 2002 in High Green, a suburb of Sheffield. Currently consists of vocalist and
-        guitarist Alex Turner, guitarist Jamie Cook, drummer Matt Helders and bass guitarist Nick O'Malley.</p><br>
-      <p>The band's music falls into the indie rock genre, although the musical style has changed with each new album,
-        which is one of the key features of the band. The band's music expanded and changed its sound in each of the
-        six albums, which makes it difficult to determine which exact style the band's compositions belong to. A key
-        part of all the band's music is vocals: complex and often quickly pronounced lyrics.</p>
-    </div>
-  </div>
-</section>
-<div class="shadow">
+  <div class="menuToggle" onclick="toggleMenu()">
 
-</div>
-<section class="mozaic">
-  <div class="elements">
-    <div class="element">
-      <h2>Albums</h2>
-    </div>
-    <div class="element">
-      <div class="imgClick">
-        <img src="/images/arctic_monkeys/whatever.jpg" class="button button1" onclick="toggleAlbum(1)">
-      </div>
-      <div class="window window1">
-        <div class="albumInformation">
-          <div class="imgAlbum">
-            <img src="/images/arctic_monkeys/whatever.jpg">
-          </div>
-          <div class="text">
-            <h2>Whatever People Say I Am, That's What I'm Not</h2>
-            <h4>January 23, 2006</h4>
-            <div class="link">
-              <a href="https://music.apple.com/om/album/whatever-people-say-i-am-thats-what-im-not/111153953">
-                <img src="/images/music.png">
-              </a>
-              <h4>Link to Apple Music</h4>
-            </div>
-          </div>
-          <div class="close" onclick="toggleAlbum(1)"></div>
-        </div>
-        <div class="trackList">
-          <ul>
-            <li>The View from the Afternoon</li>
-            <li>I Bet You Look Good on the Dancefloor</li>
-            <li>Fake Tales of San Francisco</li>
-            <li>Dancing Shoes</li>
-            <li>You Probably Couldn't See fo the Lights but You Were Staring Straight At Me</li>
-            <li>Still Take You Home</li>
-            <li>Riot Van</li>
-            <li>Red Lights Indicates Doors Are Secured</li>
-            <li>Mardy Boom</li>
-            <li>Perhaps Vampires is a Bit Strong But...</li>
-            <li>When the Sun Goes Down</li>
-            <li>From the Ritz to the Rubble</li>
-            <li>A Certain Romance</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="element">
-    </div>
-    <div class="element">
-      <div class="imgClick">
-        <img src="/images/arctic_monkeys/favourite.jpg" class="button button2" onclick="toggleAlbum(2)">
-      </div>
-      <div class="window window2">
-        <div class="albumInformation">
-          <div class="imgAlbum">
-            <img src="/images/arctic_monkeys/favourite.jpg">
-          </div>
-          <div class="text">
-            <h2>Favourite Worst Nightmare</h2>
-            <h4>April 20, 2007</h4>
-            <div class="link">
-              <a href="https://music.apple.com/om/album/favourite-worst-nightmare/251126923">
-                <img src="/images/music.png">
-              </a>
-              <h4>Link to Apple Music</h4>
-            </div>
-          </div>
-          <div class="close" onclick="toggleAlbum(2)"></div>
-        </div>
-        <div class="trackList">
-          <ul>
-            <li>Brianstorm</li>
-            <li>Teddy Picker</li>
-            <li>D Is for Dangerous</li>
-            <li>Balaclava</li>
-            <li>Fluorescent Adolescent</li>
-            <li>Only Ones Who Know</li>
-            <li>Do Me a Favour</li>
-            <li>This House Is a Circus</li>
-            <li>If You Were There, Beware</li>
-            <li>The Bad Thing</li>
-            <li>Old Yellow Bricks</li>
-            <li>505</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="element">
-      <div class="imgClick">
-        <img src="/images/arctic_monkeys/humbug.jpg" class="button button3" onclick="toggleAlbum(3)">
-      </div>
-      <div class="window window3">
-        <div class="albumInformation">
-          <div class="imgAlbum">
-            <img src="/images/arctic_monkeys/humbug.jpg">
-          </div>
-          <div class="text">
-            <h2>Humbug</h2>
-            <h4>August 19, 209</h4>
-            <div class="link">
-              <a href="https://music.apple.com/om/album/humbug-bonus-track-version/330283015">
-                <img src="/images/music.png">
-              </a>
-              <h4>Link to Apple Music</h4>
-            </div>
-          </div>
-          <div class="close" onclick="toggleAlbum(3)"></div>
-        </div>
-        <div class="trackList">
-          <ul>
-            <li>My Propeller</li>
-            <li>Crying Lighting</li>
-            <li>Dangerous Animals</li>
-            <li>Secret Door</li>
-            <li>Potion Approaching</li>
-            <li>Fire and the Thud</li>
-            <li>Cornestone</li>
-            <li>Dance Little Liar</li>
-            <li>Pretty Visitors</li>
-            <li>The Jeweller's Hands</li>
-            <li>I Haven't Got My Strange</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="element">
-    </div>
-    <div class="element">
-      <div class="imgClick">
-        <img src="/images/arctic_monkeys/suck.jpg" class="button button4" onclick="toggleAlbum(4)">
-      </div>
-      <div class="window window4">
-        <div class="albumInformation">
-          <div class="imgAlbum">
-            <img src="/images/arctic_monkeys/suck.jpg">
-          </div>
-          <div class="text">
-            <h2>Suck It and See</h2>
-            <h4>June 1, 2011</h4>
-            <div class="link">
-              <a href="https://music.apple.com/om/album/suck-it-and-see/429803439">
-                <img src="/images/music.png">
-              </a>
-              <h4>Link to Apple Music</h4>
-            </div>
-          </div>
-          <div class="close" onclick="toggleAlbum(4)"></div>
-        </div>
-        <div class="trackList">
-          <ul>
-            <li>She's Thunderstorms</li>
-            <li>Black Treacle</li>
-            <li>Brick My Brick</li>
-            <li>The Hellcat Spangled Shalalala</li>
-            <li>Don't Sit Down 'Cause I've Moved Your Chair</li>
-            <li>Library Pictures</li>
-            <li>All My Own Stunts</li>
-            <li>Reckless Serenade</li>
-            <li>Piledriver Waltz</li>
-            <li>Love Is a Laserquest</li>
-            <li>Suck It and See</li>
-            <li>That's Where You're Wrong</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="element">
-    </div>
-    <div class="element">
-    </div>
-    <div class="element">
-      <div class="imgClick">
-        <img src="/images/arctic_monkeys/am.png" class="button button5" onclick="toggleAlbum(5)">
-      </div>
-      <div class="window window5">
-        <div class="albumInformation">
-          <div class="imgAlbum">
-            <img src="/images/arctic_monkeys/am.png">
-          </div>
-          <div class="text">
-            <h2>AM</h2>
-            <h4>September 9, 2013</h4>
-            <div class="link">
-              <a href="https://music.apple.com/om/album/am/663097964">
-                <img src="/images/music.png">
-              </a>
-              <h4>Link to Apple Music</h4>
-            </div>
-          </div>
-          <div class="close" onclick="toggleAlbum(5)"></div>
-        </div>
-        <div class="trackList">
-          <ul>
-            <li>Do I Wanna Know?</li>
-            <li>R U Mine?</li>
-            <li>One for the Road</li>
-            <li>Arabella</li>
-            <li>I Want It All</li>
-            <li>No. 1 Party Anthem</li>
-            <li>Mad Sounds</li>
-            <li>FireSide</li>
-            <li>Why'd You Only Call Me When You're High?</li>
-            <li>Snap Out of It</li>
-            <li>Knee Socks</li>
-            <li>I Wanna Be Yours</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="element">
-    </div>
-    <div class="element">
-      <div class="imgClick">
-        <img src="/images/arctic_monkeys/tranquility.jpg" class="button button6" onclick="toggleAlbum(6)">
-      </div>
-      <div class="window window6">
-        <div class="albumInformation">
-          <div class="imgAlbum">
-            <img src="/images/arctic_monkeys/tranquility.jpg">
-          </div>
-          <div class="text">
-            <h2>Tranquility Base Hotel & Casino</h2>
-            <h4>May 11, 2018</h4>
-            <div class="link">
-              <a href="https://music.apple.com/om/album/am/663097964">
-                <img src="/images/music.png">
-              </a>
-              <h4>Link to Apple Music</h4>
-            </div>
-          </div>
-          <div class="close" onclick="toggleAlbum(6)"></div>
-        </div>
-        <div class="trackList">
-          <ul>
-            <li>Star Treatment</li>
-            <li>One Point Perspective</li>
-            <li>American Sports</li>
-            <li>Tranquility Base Hotel & Casino</li>
-            <li>Golden Trunks</li>
-            <li>Four out of Five</li>
-            <li>The World's First Even Monster Truck Front Flip</li>
-            <li>Science Fiction</li>
-            <li>She Looks Like Fun</li>
-            <li>Batphone</li>
-            <li>The Ultracheese</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="element">
-      <div class="imgClick">
-        <img src="/images/arctic_monkeys/car.jpg" class="button button7" onclick="toggleAlbum(7)">
-      </div>
-      <div class="window window7">
-        <div class="albumInformation">
-          <div class="imgAlbum">
-            <img src="/images/arctic_monkeys/car.jpg">
-          </div>
-          <div class="text">
-            <h2>The Car</h2>
-            <h4>October 21, 2022</h4>
-            <div class="link">
-              <a href="https://music.apple.com/om/album/the-car/1639369016">
-                <img src="/images/music.png">
-              </a>
-              <h4>Link to Apple Music</h4>
-            </div>
-          </div>
-          <div class="close" onclick="toggleAlbum(7)"></div>
-        </div>
-        <div class="trackList">
-          <ul>
-            <li>There'd Better Be A Mirrorball</li>
-            <li>I Ain't Quite Where I Think I Am</li>
-            <li>Sculptures Of Anything Goes</li>
-            <li>Jet Skis On The Moat</li>
-            <li>Body Paint</li>
-            <li>The Car</li>
-            <li>Big Ideas</li>
-            <li>Hello You</li>
-            <li>Mr Schwartz</li>
-            <li>Perfect Sense</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <br class='clear'>
   </div>
-</section>
+  <div class="navigation">
+    <div class="navArea">
+      <ul>
+        <li><a href="home.html" onmouseenter="changeImage('/images/home.jpg')">Home</a></li>
+        <li><a href="lana_del_rey.html" onmouseenter="changeImage('/images/lana_del_rey/lana.jpg')">lana del rey</a></li>
+        <li><a href="the_neighbourhood.html" onmouseenter="changeImage('/images/neighbourhood/neighbourhood.jpg')">the neighbourhood</a></li>
+        <li><a href="girl_in_red.html" onmouseenter="changeImage('/images/girl_in_red/girl.jpg')">girl in red</a></li>
+        <li><a href="arctic_monkeys.html" onmouseenter="changeImage('/images/monkeys.jpg')">arctic monkeys</a></li>
+        <li><a href="mitski.html" onmouseenter="changeImage('/images/mitski.jpg')">mitski</a></li>
+        <li><a href="aurora.html" onmouseenter="changeImage('/images/aurora.jpg')">aurora</a></li>
+      </ul>
+    </div>
+    <div class="imgArea">
+      <img src="/images/home.jpg" id="slider">
+    </div>
+  </div>
+  <section class="review">
+    <div class="imgBox">
+      <img src="/images/arctic_monkeys/arctic_monkeys_page.jpg">
+    </div>
+  </section>
+  <section class="content">
+    <div class="about">
+      <div class="name">
+        <h2>About Monkeys</h2>
+      </div>
+      <div class="information">
+        <p>British rock band formed in 2002 in High Green, a suburb of Sheffield. Currently consists of vocalist and
+          guitarist Alex Turner, guitarist Jamie Cook, drummer Matt Helders and bass guitarist Nick O'Malley.</p><br>
+        <p>The band's music falls into the indie rock genre, although the musical style has changed with each new album,
+          which is one of the key features of the band. The band's music expanded and changed its sound in each of the
+          six albums, which makes it difficult to determine which exact style the band's compositions belong to. A key
+          part of all the band's music is vocals: complex and often quickly pronounced lyrics.</p>
+      </div>
+    </div>
+  </section>
+  <div class="shadow">
+
+  </div>
+  <section class="mozaic">
+    <div class="elements">
+      <div class="element">
+        <h2>Albums</h2>
+      </div>
+      <div class="element">
+        <div class="imgClick">
+          <img src="/images/arctic_monkeys/whatever.jpg" class="button button1" onclick="toggleAlbum(1)">
+        </div>
+        <div class="window window1">
+          <div class="albumInformation">
+            <div class="imgAlbum">
+              <img src="/images/arctic_monkeys/whatever.jpg">
+            </div>
+            <div class="text">
+              <h2>Whatever People Say I Am, That's What I'm Not</h2>
+              <h4>January 23, 2006</h4>
+              <div class="link">
+                <a href="https://music.apple.com/om/album/whatever-people-say-i-am-thats-what-im-not/111153953">
+                  <img src="/images/music.png">
+                </a>
+                <h4>Link to Apple Music</h4>
+              </div>
+            </div>
+            <div class="close" onclick="toggleAlbum(1)"></div>
+          </div>
+          <div class="trackList">
+            <ul>
+              <li>The View from the Afternoon</li>
+              <li>I Bet You Look Good on the Dancefloor</li>
+              <li>Fake Tales of San Francisco</li>
+              <li>Dancing Shoes</li>
+              <li>You Probably Couldn't See fo the Lights but You Were Staring Straight At Me</li>
+              <li>Still Take You Home</li>
+              <li>Riot Van</li>
+              <li>Red Lights Indicates Doors Are Secured</li>
+              <li>Mardy Boom</li>
+              <li>Perhaps Vampires is a Bit Strong But...</li>
+              <li>When the Sun Goes Down</li>
+              <li>From the Ritz to the Rubble</li>
+              <li>A Certain Romance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="element">
+      </div>
+      <div class="element">
+        <div class="imgClick">
+          <img src="/images/arctic_monkeys/favourite.jpg" class="button button2" onclick="toggleAlbum(2)">
+        </div>
+        <div class="window window2">
+          <div class="albumInformation">
+            <div class="imgAlbum">
+              <img src="/images/arctic_monkeys/favourite.jpg">
+            </div>
+            <div class="text">
+              <h2>Favourite Worst Nightmare</h2>
+              <h4>April 20, 2007</h4>
+              <div class="link">
+                <a href="https://music.apple.com/om/album/favourite-worst-nightmare/251126923">
+                  <img src="/images/music.png">
+                </a>
+                <h4>Link to Apple Music</h4>
+              </div>
+            </div>
+            <div class="close" onclick="toggleAlbum(2)"></div>
+          </div>
+          <div class="trackList">
+            <ul>
+              <li>Brianstorm</li>
+              <li>Teddy Picker</li>
+              <li>D Is for Dangerous</li>
+              <li>Balaclava</li>
+              <li>Fluorescent Adolescent</li>
+              <li>Only Ones Who Know</li>
+              <li>Do Me a Favour</li>
+              <li>This House Is a Circus</li>
+              <li>If You Were There, Beware</li>
+              <li>The Bad Thing</li>
+              <li>Old Yellow Bricks</li>
+              <li>505</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="element">
+        <div class="imgClick">
+          <img src="/images/arctic_monkeys/humbug.jpg" class="button button3" onclick="toggleAlbum(3)">
+        </div>
+        <div class="window window3">
+          <div class="albumInformation">
+            <div class="imgAlbum">
+              <img src="/images/arctic_monkeys/humbug.jpg">
+            </div>
+            <div class="text">
+              <h2>Humbug</h2>
+              <h4>August 19, 209</h4>
+              <div class="link">
+                <a href="https://music.apple.com/om/album/humbug-bonus-track-version/330283015">
+                  <img src="/images/music.png">
+                </a>
+                <h4>Link to Apple Music</h4>
+              </div>
+            </div>
+            <div class="close" onclick="toggleAlbum(3)"></div>
+          </div>
+          <div class="trackList">
+            <ul>
+              <li>My Propeller</li>
+              <li>Crying Lighting</li>
+              <li>Dangerous Animals</li>
+              <li>Secret Door</li>
+              <li>Potion Approaching</li>
+              <li>Fire and the Thud</li>
+              <li>Cornestone</li>
+              <li>Dance Little Liar</li>
+              <li>Pretty Visitors</li>
+              <li>The Jeweller's Hands</li>
+              <li>I Haven't Got My Strange</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="element">
+      </div>
+      <div class="element">
+        <div class="imgClick">
+          <img src="/images/arctic_monkeys/suck.jpg" class="button button4" onclick="toggleAlbum(4)">
+        </div>
+        <div class="window window4">
+          <div class="albumInformation">
+            <div class="imgAlbum">
+              <img src="/images/arctic_monkeys/suck.jpg">
+            </div>
+            <div class="text">
+              <h2>Suck It and See</h2>
+              <h4>June 1, 2011</h4>
+              <div class="link">
+                <a href="https://music.apple.com/om/album/suck-it-and-see/429803439">
+                  <img src="/images/music.png">
+                </a>
+                <h4>Link to Apple Music</h4>
+              </div>
+            </div>
+            <div class="close" onclick="toggleAlbum(4)"></div>
+          </div>
+          <div class="trackList">
+            <ul>
+              <li>She's Thunderstorms</li>
+              <li>Black Treacle</li>
+              <li>Brick My Brick</li>
+              <li>The Hellcat Spangled Shalalala</li>
+              <li>Don't Sit Down 'Cause I've Moved Your Chair</li>
+              <li>Library Pictures</li>
+              <li>All My Own Stunts</li>
+              <li>Reckless Serenade</li>
+              <li>Piledriver Waltz</li>
+              <li>Love Is a Laserquest</li>
+              <li>Suck It and See</li>
+              <li>That's Where You're Wrong</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="element">
+      </div>
+      <div class="element">
+      </div>
+      <div class="element">
+        <div class="imgClick">
+          <img src="/images/arctic_monkeys/am.png" class="button button5" onclick="toggleAlbum(5)">
+        </div>
+        <div class="window window5">
+          <div class="albumInformation">
+            <div class="imgAlbum">
+              <img src="/images/arctic_monkeys/am.png">
+            </div>
+            <div class="text">
+              <h2>AM</h2>
+              <h4>September 9, 2013</h4>
+              <div class="link">
+                <a href="https://music.apple.com/om/album/am/663097964">
+                  <img src="/images/music.png">
+                </a>
+                <h4>Link to Apple Music</h4>
+              </div>
+            </div>
+            <div class="close" onclick="toggleAlbum(5)"></div>
+          </div>
+          <div class="trackList">
+            <ul>
+              <li>Do I Wanna Know?</li>
+              <li>R U Mine?</li>
+              <li>One for the Road</li>
+              <li>Arabella</li>
+              <li>I Want It All</li>
+              <li>No. 1 Party Anthem</li>
+              <li>Mad Sounds</li>
+              <li>FireSide</li>
+              <li>Why'd You Only Call Me When You're High?</li>
+              <li>Snap Out of It</li>
+              <li>Knee Socks</li>
+              <li>I Wanna Be Yours</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="element">
+      </div>
+      <div class="element">
+        <div class="imgClick">
+          <img src="/images/arctic_monkeys/tranquility.jpg" class="button button6" onclick="toggleAlbum(6)">
+        </div>
+        <div class="window window6">
+          <div class="albumInformation">
+            <div class="imgAlbum">
+              <img src="/images/arctic_monkeys/tranquility.jpg">
+            </div>
+            <div class="text">
+              <h2>Tranquility Base Hotel & Casino</h2>
+              <h4>May 11, 2018</h4>
+              <div class="link">
+                <a href="https://music.apple.com/om/album/am/663097964">
+                  <img src="/images/music.png">
+                </a>
+                <h4>Link to Apple Music</h4>
+              </div>
+            </div>
+            <div class="close" onclick="toggleAlbum(6)"></div>
+          </div>
+          <div class="trackList">
+            <ul>
+              <li>Star Treatment</li>
+              <li>One Point Perspective</li>
+              <li>American Sports</li>
+              <li>Tranquility Base Hotel & Casino</li>
+              <li>Golden Trunks</li>
+              <li>Four out of Five</li>
+              <li>The World's First Even Monster Truck Front Flip</li>
+              <li>Science Fiction</li>
+              <li>She Looks Like Fun</li>
+              <li>Batphone</li>
+              <li>The Ultracheese</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="element">
+        <div class="imgClick">
+          <img src="/images/arctic_monkeys/car.jpg" class="button button7" onclick="toggleAlbum(7)">
+        </div>
+        <div class="window window7">
+          <div class="albumInformation">
+            <div class="imgAlbum">
+              <img src="/images/arctic_monkeys/car.jpg">
+            </div>
+            <div class="text">
+              <h2>The Car</h2>
+              <h4>October 21, 2022</h4>
+              <div class="link">
+                <a href="https://music.apple.com/om/album/the-car/1639369016">
+                  <img src="/images/music.png">
+                </a>
+                <h4>Link to Apple Music</h4>
+              </div>
+            </div>
+            <div class="close" onclick="toggleAlbum(7)"></div>
+          </div>
+          <div class="trackList">
+            <ul>
+              <li>There'd Better Be A Mirrorball</li>
+              <li>I Ain't Quite Where I Think I Am</li>
+              <li>Sculptures Of Anything Goes</li>
+              <li>Jet Skis On The Moat</li>
+              <li>Body Paint</li>
+              <li>The Car</li>
+              <li>Big Ideas</li>
+              <li>Hello You</li>
+              <li>Mr Schwartz</li>
+              <li>Perfect Sense</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br class='clear'>
+    </div>
+  </section>
 </body>
 </html>

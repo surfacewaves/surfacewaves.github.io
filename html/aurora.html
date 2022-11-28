@@ -12,215 +12,219 @@
     <script src="/scripts/script.js"></script>
 </head>
 <body>
-<header class="line">
-    <h2>WM</h2>
+    <header class="line">
+    <div class="logo">
+        <a href="index.html"><h2>WM</h2></a>
+    </div>
 </header>
-<div class="menuToggle" onclick="toggleMenu()"></div>
-<div class="navigation">
-    <div class="navArea">
-        <ul>
-            <li><a href="../index.html" onmouseenter="changeImage('/images/home.jpg')">Home</a></li>
-            <li><a href="lana_del_rey.html" onmouseenter="changeImage('/images/lana_del_rey/lana.jpg')">lana del rey</a></li>
-            <li><a href="the_neighbourhood.html" onmouseenter="changeImage('/images/neighbourhood/neighbourhood.jpg')">the neighbourhood</a></li>
-            <li><a href="girl_in_red.html" onmouseenter="changeImage('/images/girl.jpg')">girl in red</a></li>
-            <li><a href="arctic_monkeys.html" onmouseenter="changeImage('/images/arctic_monkeys/monkeys.jpg')">arctic monkeys</a></li>
-            <li><a href="mitski.html" onmouseenter="changeImage('/images/mitski/mitski.jpg')">mitski</a></li>
-            <li><a href="aurora.html" onmouseenter="changeImage('/images/aurora/aurora.jpg')">aurora</a></li>
-        </ul>
-    </div>
-    <div class="imgArea">
-        <img src="/images/home.jpg" id="slider">
-    </div>
-</div>
-<section class="review">
-    <div class="imgBox">
-        <img src="/images/aurora/aurora_page.jpg">
-    </div>
-</section>
-<section class="content">
-    <div class="about">
-        <div class="name">
-            <h2>About aurora</h2>
-        </div>
-        <div class="information">
-            <p>AURORA is a Norwegian singer, songwriter and music producer.</p><br>
-            <p>The singer's creativity is distinguished by eclecticism, a style that combines art and synthpop,
-                Scandinavian folk, electro-folk, as well as shades of indie and electra. Her music attracted a huge
-                number of fans with a "darkly romantic character" along with her eccentricity.</p>
-        </div>
-    </div>
-</section>
-<div class="shadow">
+    <div class="menuToggle" onclick="toggleMenu()">
 
-</div>
-<section class="mozaic">
-    <div class="elements">
-        <div class="element">
-            <h2>Albums</h2>
-        </div>
-        <div class="element">
-            <div class="imgClick">
-                <img src="/images/aurora/demons.jpg" class="button button1" onclick="toggleAlbum(1)">
-            </div>
-            <div class="window window1">
-                <div class="albumInformation">
-                    <div class="imgAlbum">
-                        <img src="/images/aurora/demons.jpg">
-                    </div>
-                    <div class="text">
-                        <h2>All My Demons Greeting Me As a Friend </h2>
-                        <h4>March 11, 2016</h4>
-                        <div class="link">
-                            <a href="https://music.apple.com/om/album/all-my-demons-greeting-me-as-a-friend-deluxe/1440827047">
-                                <img src="/images/music.png">
-                            </a>
-                            <h4>Link to Apple Music</h4>
-                        </div>
-                    </div>
-                    <div class="close" onclick="toggleAlbum(1)"></div>
-                </div>
-                <div class="trackList">
-                    <ul>
-                        <li>Runaway</li>
-                        <li>Conqueror</li>
-                        <li>Running With the Wolves</li>
-                        <li>Lucky</li>
-                        <li>Winder Bird</li>
-                        <li>I Went Too Far</li>
-                        <li>Through the Eyes of a Child</li>
-                        <li>Warrior</li>
-                        <li>Murder Song (5, 4, 3, 2, 1)</li>
-                        <li>Home</li>
-                        <li>Under the Water</li>
-                        <li>Black Water Lilies</li>
-                        <li>Half the World Away</li>
-                        <li>Murder Song (5, 4, 3, 2, 1) [Acoustic]</li>
-                        <li>Nature Boy [Acoustic]</li>
-                        <li>Wisdom Cries</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="element">
-        </div>
-        <div class="element">
-            <div class="imgClick">
-                <img src="/images/aurora/infection.jpg" class="button button2" onclick="toggleAlbum(2)">
-            </div>
-            <div class="window window2">
-                <div class="albumInformation">
-                    <div class="imgAlbum">
-                        <img src="/images/aurora/infection.jpg">
-                    </div>
-                    <div class="text">
-                        <h2>Infections of a Different Kind (Step 1)</h2>
-                        <h4>September 28, 2018</h4>
-                        <div class="link">
-                            <a href="https://music.apple.com/om/album/infections-of-a-different-kind-step-1/1436242426">
-                                <img src="/images/music.png">
-                            </a>
-                            <h4>Link to Apple Music</h4>
-                        </div>
-                    </div>
-                    <div class="close" onclick="toggleAlbum(2)"></div>
-                </div>
-                <div class="trackList">
-                    <ul>
-                        <li>Queendom</li>
-                        <li>Forgotten Love</li>
-                        <li>Gentle Earthquakes</li>
-                        <li>All Is Soft Inside</li>
-                        <li>It Happened Quiet</li>
-                        <li>Churchyard</li>
-                        <li>Soft Universe</li>
-                        <li>Infections of a Different Kind</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="element">
-            <div class="imgClick">
-                <img src="/images/aurora/infection.jpg" class="button button3" onclick="toggleAlbum(3)">
-            </div>
-            <div class="window window3">
-                <div class="albumInformation">
-                    <div class="imgAlbum">
-                        <img src="/images/aurora/infection.jpg">
-                    </div>
-                    <div class="text">
-                        <h2>Infections of a Different Kind (Step 2)</h2>
-                        <h4>June 7, 2019</h4>
-                        <div class="link">
-                            <a href="https://music.apple.com/om/album/a-different-kind-of-human-step-2/1457181981">
-                                <img src="/images/music.png">
-                            </a>
-                            <h4>Link to Apple Music</h4>
-                        </div>
-                    </div>
-                    <div class="close" onclick="toggleAlbum(3)"></div>
-                </div>
-                <div class="trackList">
-                    <ul>
-                        <li>The River</li>
-                        <li>Animal</li>
-                        <li>Dance on the Moon</li>
-                        <li>Daydreamer</li>
-                        <li>Hunger</li>
-                        <li>Soulless Creatures</li>
-                        <li>In Bottles</li>
-                        <li>A Different Kind of Human</li>
-                        <li>Apple Tree</li>
-                        <li>The Seed</li>
-                        <li>Mothership</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="element">
-        </div>
-        <div class="element">
-            <div class="imgClick">
-                <img src="/images/aurora/gods.jpg" class="button button4" onclick="toggleAlbum(4)">
-            </div>
-            <div class="window window4">
-                <div class="albumInformation">
-                    <div class="imgAlbum">
-                        <img src="/images/aurora/gods.jpg">
-                    </div>
-                    <div class="text">
-                        <h2>The Gods We Can Touch</h2>
-                        <h4>January 21, 2022</h4>
-                        <div class="link">
-                            <a href="https://music.apple.com/om/album/the-gods-we-can-touch/1588084425">
-                                <img src="/images/music.png">
-                            </a>
-                            <h4>Link to Apple Music</h4>
-                        </div>
-                    </div>
-                    <div class="close" onclick="toggleAlbum(4)"></div>
-                </div>
-                <div class="trackList">
-                    <ul>
-                        <li>The Forbidden Fruits Of Eden</li>
-                        <li>Everything Matters (feat. Pomme)</li>
-                        <li>Giving In To the Love</li>
-                        <li>Cure For Me</li>
-                        <li>You Keep Me Crawling</li>
-                        <li>Exist for Love</li>
-                        <li>Heathens</li>
-                        <li>Exhale Inhale</li>
-                        <li>A Temporary High</li>
-                        <li>A Dangerous Thing</li>
-                        <li>Artemis</li>
-                        <li>Blood in the Wine</li>
-                        <li>This could Be A Dream</li>
-                        <li>A Little Place Called the Moon</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <br class='clear'>
     </div>
-</section>
+    <div class="navigation">
+        <div class="navArea">
+            <ul>
+                <li><a href="home.html" onmouseenter="changeImage('/images/home.jpg')">Home</a></li>
+                <li><a href="lana_del_rey.html" onmouseenter="changeImage('/images/lana_del_rey/lana.jpg')">lana del rey</a></li>
+                <li><a href="the_neighbourhood.html" onmouseenter="changeImage('/images/neighbourhood/neighbourhood.jpg')">the neighbourhood</a></li>
+                <li><a href="girl_in_red.html" onmouseenter="changeImage('/images/girl.jpg')">girl in red</a></li>
+                <li><a href="arctic_monkeys.html" onmouseenter="changeImage('/images/arctic_monkeys/monkeys.jpg')">arctic monkeys</a></li>
+                <li><a href="mitski.html" onmouseenter="changeImage('/images/mitski/mitski.jpg')">mitski</a></li>
+                <li><a href="aurora.html" onmouseenter="changeImage('/images/aurora/aurora.jpg')">aurora</a></li>
+            </ul>
+        </div>
+        <div class="imgArea">
+            <img src="/images/home.jpg" id="slider">
+        </div>
+    </div>
+    <section class="review">
+        <div class="imgBox">
+            <img src="/images/aurora/aurora_page.jpg">
+        </div>
+    </section>
+    <section class="content">
+        <div class="about">
+            <div class="name">
+                <h2>About aurora</h2>
+            </div>
+            <div class="information">
+                <p>AURORA is a Norwegian singer, songwriter and music producer.</p><br>
+                <p>The singer's creativity is distinguished by eclecticism, a style that combines art and synthpop,
+                    Scandinavian folk, electro-folk, as well as shades of indie and electra. Her music attracted a huge
+                    number of fans with a "darkly romantic character" along with her eccentricity.</p>
+            </div>
+        </div>
+    </section>
+    <div class="shadow">
+
+    </div>
+    <section class="mozaic">
+        <div class="elements">
+            <div class="element">
+                <h2>Albums</h2>
+            </div>
+            <div class="element">
+                <div class="imgClick">
+                    <img src="/images/aurora/demons.jpg" class="button button1" onclick="toggleAlbum(1)">
+                </div>
+                <div class="window window1">
+                    <div class="albumInformation">
+                        <div class="imgAlbum">
+                            <img src="/images/aurora/demons.jpg">
+                        </div>
+                        <div class="text">
+                            <h2>All My Demons Greeting Me As a Friend </h2>
+                            <h4>March 11, 2016</h4>
+                            <div class="link">
+                                <a href="https://music.apple.com/om/album/all-my-demons-greeting-me-as-a-friend-deluxe/1440827047">
+                                    <img src="/images/music.png">
+                                </a>
+                                <h4>Link to Apple Music</h4>
+                            </div>
+                        </div>
+                        <div class="close" onclick="toggleAlbum(1)"></div>
+                    </div>
+                    <div class="trackList">
+                        <ul>
+                            <li>Runaway</li>
+                            <li>Conqueror</li>
+                            <li>Running With the Wolves</li>
+                            <li>Lucky</li>
+                            <li>Winder Bird</li>
+                            <li>I Went Too Far</li>
+                            <li>Through the Eyes of a Child</li>
+                            <li>Warrior</li>
+                            <li>Murder Song (5, 4, 3, 2, 1)</li>
+                            <li>Home</li>
+                            <li>Under the Water</li>
+                            <li>Black Water Lilies</li>
+                            <li>Half the World Away</li>
+                            <li>Murder Song (5, 4, 3, 2, 1) [Acoustic]</li>
+                            <li>Nature Boy [Acoustic]</li>
+                            <li>Wisdom Cries</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="element">
+            </div>
+            <div class="element">
+                <div class="imgClick">
+                    <img src="/images/aurora/infection.jpg" class="button button2" onclick="toggleAlbum(2)">
+                </div>
+                <div class="window window2">
+                    <div class="albumInformation">
+                        <div class="imgAlbum">
+                            <img src="/images/aurora/infection.jpg">
+                        </div>
+                        <div class="text">
+                            <h2>Infections of a Different Kind (Step 1)</h2>
+                            <h4>September 28, 2018</h4>
+                            <div class="link">
+                                <a href="https://music.apple.com/om/album/infections-of-a-different-kind-step-1/1436242426">
+                                    <img src="/images/music.png">
+                                </a>
+                                <h4>Link to Apple Music</h4>
+                            </div>
+                        </div>
+                        <div class="close" onclick="toggleAlbum(2)"></div>
+                    </div>
+                    <div class="trackList">
+                        <ul>
+                            <li>Queendom</li>
+                            <li>Forgotten Love</li>
+                            <li>Gentle Earthquakes</li>
+                            <li>All Is Soft Inside</li>
+                            <li>It Happened Quiet</li>
+                            <li>Churchyard</li>
+                            <li>Soft Universe</li>
+                            <li>Infections of a Different Kind</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="element">
+                <div class="imgClick">
+                    <img src="/images/aurora/infection.jpg" class="button button3" onclick="toggleAlbum(3)">
+                </div>
+                <div class="window window3">
+                    <div class="albumInformation">
+                        <div class="imgAlbum">
+                            <img src="/images/aurora/infection.jpg">
+                        </div>
+                        <div class="text">
+                            <h2>Infections of a Different Kind (Step 2)</h2>
+                            <h4>June 7, 2019</h4>
+                            <div class="link">
+                                <a href="https://music.apple.com/om/album/a-different-kind-of-human-step-2/1457181981">
+                                    <img src="/images/music.png">
+                                </a>
+                                <h4>Link to Apple Music</h4>
+                            </div>
+                        </div>
+                        <div class="close" onclick="toggleAlbum(3)"></div>
+                    </div>
+                    <div class="trackList">
+                        <ul>
+                            <li>The River</li>
+                            <li>Animal</li>
+                            <li>Dance on the Moon</li>
+                            <li>Daydreamer</li>
+                            <li>Hunger</li>
+                            <li>Soulless Creatures</li>
+                            <li>In Bottles</li>
+                            <li>A Different Kind of Human</li>
+                            <li>Apple Tree</li>
+                            <li>The Seed</li>
+                            <li>Mothership</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="element">
+            </div>
+            <div class="element">
+                <div class="imgClick">
+                    <img src="/images/aurora/gods.jpg" class="button button4" onclick="toggleAlbum(4)">
+                </div>
+                <div class="window window4">
+                    <div class="albumInformation">
+                        <div class="imgAlbum">
+                            <img src="/images/aurora/gods.jpg">
+                        </div>
+                        <div class="text">
+                            <h2>The Gods We Can Touch</h2>
+                            <h4>January 21, 2022</h4>
+                            <div class="link">
+                                <a href="https://music.apple.com/om/album/the-gods-we-can-touch/1588084425">
+                                    <img src="/images/music.png">
+                                </a>
+                                <h4>Link to Apple Music</h4>
+                            </div>
+                        </div>
+                        <div class="close" onclick="toggleAlbum(4)"></div>
+                    </div>
+                    <div class="trackList">
+                        <ul>
+                            <li>The Forbidden Fruits Of Eden</li>
+                            <li>Everything Matters (feat. Pomme)</li>
+                            <li>Giving In To the Love</li>
+                            <li>Cure For Me</li>
+                            <li>You Keep Me Crawling</li>
+                            <li>Exist for Love</li>
+                            <li>Heathens</li>
+                            <li>Exhale Inhale</li>
+                            <li>A Temporary High</li>
+                            <li>A Dangerous Thing</li>
+                            <li>Artemis</li>
+                            <li>Blood in the Wine</li>
+                            <li>This could Be A Dream</li>
+                            <li>A Little Place Called the Moon</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br class='clear'>
+        </div>
+    </section>
 </body>
 </html>
