@@ -167,7 +167,7 @@
         transform: translateY(5px);
     }
     50% {
-        transform: translateY(-5px);
+        transform: translateY(-5px) scale(0.5);
     }
 }
 /*Размеры и анимация самых маленьких квадратов*/
@@ -245,6 +245,7 @@ form p a {
     color: #DDDDDD;
     text-decoration: none;
     position: relative;
+    border-bottom: 1px solid #DDDDDD;
 }
 /*Адаптивность*/
 @media (max-width: 768px) {

@@ -8,10 +8,13 @@
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="../stylesheets/base.css">
 	<link rel="stylesheet" type="text/css" href="../stylesheets/menu.css">
-	<link rel="stylesheet" type="text/css" href="../stylesheets/home.css">
+<!--	<link rel="stylesheet" type="text/css" href="../stylesheets/home.css">-->
 	<script src="../scripts/script.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../stylesheets/slide.css">
+	<script src="../scripts/slideShow.js"></script>
 </head>
-<body class="scrolling index">
+<body class="scrolling index" onload="slider()">
 	<header class="line">
 	<div class="logo">
 		<a href="../index.html"><h2>WM</h2></a>
@@ -34,10 +37,21 @@
 			<img src="/images/home.jpg" id="slider">
 		</div>
 	</div>
-	<!--<div class="container">
-		<div class="slider">
-			<div class="page">
-				<div class="slide slide1">
+	<div class="container">
+		<div class="slider" id="_slider">
+			<div class="arrowLeft" id="arrowLeft">
+				<div class="arrowBackground">
+					<div class="arrow"></div>
+				</div>
+			</div>
+			<div class="arrowRight" id="arrowRight">
+				<div class="arrowBackground">
+					<div class="arrow"></div>
+				</div>
+			</div>
+			<div class="sliderTrack" id="slidertrack">
+				<div class="sliderItem">
+					<img src="/images/girl_in_red/girl_news.jpg">
 					<div class="caption">
 						<h2>New track</h2>
 						<p>On October 14, girl in red will release a new track called 'october passed me by'
@@ -45,9 +59,8 @@
 						<a href="girl_in_red.html">more</a>
 					</div>
 				</div>
-			</div>
-			<div class="page">
-				<div class="slide slide2">
+				<div class="sliderItem">
+					<img src="/images/neighbourhood/neighbourhood_news.jpg">
 					<div class="caption">
 						<h2>Pause</h2>
 						<p>On February 26, The Neighborhood announced a break in creative activity,
@@ -55,9 +68,16 @@
 						<a href="the_neighbourhood.html">more</a>
 					</div>
 				</div>
-			</div>
-			<div class="page">
-				<div class="slide slide3">
+				<div class="sliderItem">
+					<img src="/images/aurora/aurora_news.jpg">
+					<div class="caption">
+						<h2>Tour</h2>
+						<p>AURORA's Asia tour starts on November 26, it will start with OSLO, and will end on March 9 next year in Melbourne.</p>
+						<a href="aurora.html">more</a>
+					</div>
+				</div>
+				<div class="sliderItem">
+					<img src="/images/arctic_monkeys/monkeys_news.jpg">
 					<div class="caption">
 						<h2>New album</h2>
 						<p>On October 21, Arctic Monkeys released their 7th studio album titled "The car".</p>
@@ -65,27 +85,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="page">
-				<div class="slide slide4">
-					<div class="caption">
-						<h2>Tour</h2>
-						<p>AURORA's Asia tour starts on November 26, it will start with OSLO, and will end on March 9 next year in Melbourne.</p>
-						<a href="aurora.html">more</a>
-					</div>
-				</div>
-			</div>
-			<div class="page">
-				<div class="slide slide1">
-					<div class="caption">
-						<h2>New track</h2>
-						<p>On October 14, girl in red will release a new track called 'october passed me by'
-							under a new Instagram post, the singer wrote "the story continues..."</p>
-						<a href="#">more</a>
-					</div>
-				</div>
-			</div>
 		</div>
-	</div>-->
+	</div>
 	<footer>
 		<div class="socials">
 			<div class="social">

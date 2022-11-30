@@ -1,0 +1,178 @@
+/*Линия слайдов*/
+.container {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .slider {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    background: #DDDDDD;
+    overflow: hidden;
+}
+.sliderTrack {
+    height: 500px;
+    display: flex;
+    transition: 0.5s;
+}
+.container .slider img {
+    width: 1000px;
+    height: 500px;
+    object-fit: cover;
+    transition: .5s;
+}
+/*Текст на слайдах*/
+.sliderTrack .sliderItem {
+    position: relative;
+}
+.sliderItem .caption {
+    position: absolute;
+    z-index: 5;
+    bottom: 60px;
+    left: 60px;
+    padding: 30px;
+    width: 50%;
+    background: #1C1C1A;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.sliderItem .caption:hover {
+    opacity: 1;
+}
+.sliderItem .caption h2 {
+    margin-bottom: 10px;
+}
+.sliderItem .caption p {
+    margin-bottom: 20px;
+}
+.sliderItem .caption a {
+    position: absolute;
+    bottom: 15px;
+    right: 50px;
+    padding: 5px 10px;
+    background: #DDDDDD;
+    color: #1C1C1A;
+    text-decoration: none;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+.sliderItem .caption a:hover {
+    opacity: 1;
+}
+/*Стрелочки*/
+.arrowBackground {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.arrow {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top: #2D2D2D 5px solid;
+    border-right: #2D2D2D 5px solid;
+}
+.arrowRight .arrow {
+    transform: rotate(45deg);
+    top: 16px;
+    left: 16px;
+}
+.arrowLeft .arrow {
+    transform: rotate(-135deg);
+    top: 16px;
+    left: 18px;
+}
+.arrowRight,
+.arrowLeft {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+.arrowRight {
+    right: 10px;
+}
+.arrowLeft {
+    left: 10px;
+}
+/*Адапативность*/
+@media (max-width: 1000px) {
+    .container .slider {
+        width: 700px;
+        height: 450px;
+    }
+    .sliderTrack {
+        height: 450px;
+    }
+    .container .slider img {
+        width: 700px;
+        height: 450px;
+    }
+}
+@media (max-width: 768px) {
+    .container .slider {
+        width: 450px;
+        height: 250px;
+    }
+    .sliderTrack {
+        height: 250px;
+    }
+    .container .slider img {
+        width: 450px;
+        height: 250px;
+    }
+    .arrowBackground {
+        width: 30px;
+        height: 30px;
+    }
+    .arrow {
+        width: 13px;
+        height: 13px;
+    }
+    .arrowRight .arrow {
+        top: 10px;
+        left: 8px;
+    }
+    .arrowLeft .arrow {
+        top: 9px;
+        left: 10px;
+    }
+    .sliderItem .caption {
+        bottom: 20px;
+        left: 20px;
+        padding: 10px;
+        width: 70%;
+    }
+    .sliderItem .caption h2 {
+        font-size: 15px;
+    }
+    .sliderItem .caption p {
+        margin-bottom: 30px;
+        font-size: 10px;
+    }
+    .sliderItem .caption a {
+        font-size: 10px;
+    }
+}
+@media (max-width: 500px) {
+    .container .slider {
+        width: 400px;
+        height: 400px;
+    }
+    .sliderTrack {
+        height: 400px;
+    }
+    .container .slider img {
+        width: 400px;
+        height: 400px;
+    }
+}
