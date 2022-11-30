@@ -290,7 +290,7 @@ form p a {
 }
 @media (max-width: 500px) {
     .welcome .word h2 {
-        font-size: 8vw;
+        font-size: 7.5vw;
     }
     .welcome .content {
         width: 80%;
@@ -299,19 +299,19 @@ form p a {
         padding: 6vw 5vw 5vw 5vw;
     }
     .welcome .content .text h2 {
-        font-size: 5vw;
+        font-size: 4.5vw;
     }
     .welcome .content .text h2 span {
-        font-size: 6vw;
+        font-size: 5.5vw;
     }
     .welcome .content .text p {
-        font-size: 4.5vw;
+        font-size: 4vw;
     }
     .welcome .content .links {
         padding: 2vw 0 7vw 0;
     }
     .welcome .content .links a {
-        font-size: 4.5vw;
+        font-size: 4vw;
     }
     .areaLogin {
         padding-top: 50px;
