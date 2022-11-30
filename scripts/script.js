@@ -15,7 +15,9 @@ function toggleAlbum(n) {
     const button = document.querySelector('.button' + n);
     const window = document.querySelector('.window' + n);
     const shadow = document.querySelector('.shadow');
+    const scrolling = document.querySelector('.scrolling');
     button.classList.toggle('active');
     window.classList.toggle('active');
     shadow.classList.toggle('active');
+    scrolling.classList.toggle('active');
 }

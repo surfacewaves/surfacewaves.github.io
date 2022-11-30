@@ -48,7 +48,6 @@
     font-size: 20px;
     line-height: 1.3em;
     letter-spacing: -0.02em;
-    vertical-align: baseline;
 }
 
 /*Мозаика альбомов*/
@@ -58,17 +57,7 @@
     padding: 0 50px 0 60px;
     background: #1C1C1A;
 }
-.clear { /*из за float элементов высота не расчитывается по содержимому, тут очистка (смотреть https://habr.com/ru/post/136588/)*/
-    clear: both;
-    display: block;
-    height: 0;
-    line-height: 0;
-    overflow: hidden;
-    font-size: 0;
-}
-.elements {
-    height: 100%;
-}
+
 .mozaic .element {
     width: calc(26vw - 50px);
     height: calc(26vw - 50px);
@@ -94,8 +83,17 @@
     height: 100%;
     object-fit: cover;
 }
-
-/*Всплывающая информация об альбоме*/
+/*из-за float элементов высота не расчитывается по содержимому, тут очистка
+(смотреть https://habr.com/ru/post/136588/)*/
+.clear {
+    clear: both;
+    display: block;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    font-size: 0;
+}
+/*Затемнение страницы позади всплывающего окна с информацией*/
 .shadow {
     width: 100%;
     height: 100%;
@@ -110,6 +108,7 @@
 .shadow.active {
     visibility: visible;
 }
+/*Всплывающее окно с информацией*/
 .mozaic .element .window {
     height: auto;
     width: 40vw;
@@ -192,6 +191,7 @@
     .content .about .name {
         width: 100%;
         height: 36px;
+        margin-right: 0;
     }
     .content .about .information {
         width: 100%;
@@ -200,7 +200,7 @@
         font-size: 18px;
     }
     .mozaic {
-        padding: 0 10px;
+        padding: 0 10px 0 20px;
     }
     .mozaic .element {
         width: calc(50vw - 20px);
@@ -226,5 +226,11 @@
     .mozaic .element .window .trackList ul li {
         line-height: 1.5em;
         font-size: 14px;
+    }
+}
+@media (max-height: 650px) {
+    .review {
+        height: 100vh;
+        padding-top: 40px;
     }
 }

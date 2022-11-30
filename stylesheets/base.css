@@ -9,6 +9,10 @@ body {
     background: #2D2D2D;
     color: #DDDDDD;
 }
+/*Запрет скроллинга страницы при открытии меню/альбома*/
+body.active {
+    overflow-y: hidden;
+}
 @font-face {
     font-family: 'aaa';
     src: local('Consolas Regular'), local('Consolas-Regular'),
