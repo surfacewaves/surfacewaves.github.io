@@ -121,6 +121,7 @@
     flex-direction: column;
     visibility: hidden;
     z-index: 10;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 .mozaic .element .window.active {
     visibility: visible;
@@ -178,11 +179,30 @@
     line-height: 1.6em;
     font-size: 1.2vw;
 }
-.mozaic .element .window .trackList ul li span {
-    font-size: 12px;
-}
-
 /*Адаптация*/
+@media (max-width: 1000px) {
+    .mozaic .element .window {
+        top: 23%;
+    }
+    .mozaic .element .window .albumInformation .text h2 {
+        font-size: 20px;
+    }
+    .mozaic .element .window .albumInformation .text h4 {
+        font-size: 15px;
+    }
+    .mozaic .element .window .albumInformation .text .link h4 {
+        padding: 2px 0 0 10px;
+        font-size: 13px;
+    }
+    .mozaic .element .window .trackList ul {
+        padding: 15px 0 15px 50px;
+    }
+    .mozaic .element .window .trackList ul li {
+        list-style: decimal-leading-zero;
+        line-height: 1.6em;
+        font-size: 1.5vw;
+    }
+}
 @media (max-width: 768px) {
     .review {
         height: 40vh;
@@ -210,9 +230,9 @@
         padding: 1px;
     }
     .mozaic .element .window {
-        width: 70vw;
+        width: 60vw;
         top: 10%;
-        left: 15%;
+        left: 23%;
     }
     .mozaic .element .window .albumInformation .text h2 {
         font-size: 13px;
@@ -221,9 +241,8 @@
     .mozaic .element .window .albumInformation .text .link h4 {
         font-size: 10px;
     }
-    .mozaic .element .window .albumInformation .text .link img {
-        width: 20px;
-        height: 20px;
+    .mozaic .element .window .trackList ul {
+        padding: 10px 0 10px 40px;
     }
     .mozaic .element .window .trackList ul li {
         line-height: 1.5em;
@@ -249,6 +268,9 @@
     .mozaic .element:nth-child(1) h2 {
         font-size: 8vw;
     }
+    .mozaic .element .window .albumInformation .text {
+        padding-left: 15px;
+    }
     .mozaic .element .window .trackList ul li {
         line-height: 1.5em;
         font-size: 13px;
@@ -258,5 +280,11 @@
     .review {
         height: 100vh;
         padding-top: 40px;
+    }
+}
+@media (max-height: 500px) {
+    .mozaic .element .window .trackList ul li {
+        line-height: 1.5em;
+        font-size: 10px;
     }
 }
