@@ -224,8 +224,8 @@ footer .copyright h3 {
         opacity: 0.5;
     }
     .menuToggle {
-        top: 10px;
-        right: 10px;
+        top: 1px;
+        right: 1px;
     }
     footer {
         height: 40px;
