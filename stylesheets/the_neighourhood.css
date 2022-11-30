@@ -1,0 +1,78 @@
+.mozaic .element .window {
+    top: 15%;
+}
+.mozaic .element:nth-child(4) .window {
+    top: 7%;
+}
+.mozaic .element:nth-child(7) .window {
+    top: 6%;
+}
+.mozaic .element:nth-child(7) .window .albumInformation .text h2 {
+    font-size: 18px;
+}
+.mozaic .element:nth-child(7) .window .trackList ul {
+    padding: 10px 0 10px 50px;
+}
+.mozaic .element:nth-child(7) .window .trackList ul li {
+    font-size: 1vw;
+}
+@media (max-width: 1000px) {
+    .mozaic .element:nth-child(2) .window,
+    .mozaic .element:nth-child(5) .window,
+    .mozaic .element:nth-child(7) .window {
+        top: 20%;
+    }
+    .mozaic .element:nth-child(4) .window {
+        top: 18%;
+    }
+    .mozaic .element:nth-child(7) .window {
+        top: 15%;
+    }
+    .mozaic .element:nth-child(7) .window .albumInformation .text h2 {
+        font-size: 14px;
+    }
+    .mozaic .element:nth-child(7) .window .trackList ul {
+        padding: 10px 0 10px 55px;
+    }
+    .mozaic .element:nth-child(7) .window .trackList ul li {
+        font-size: 1.3vw;
+    }
+    .mozaic .element:nth-child(10) .window {
+        top: 20%;
+    }
+}
+@media (max-width: 768px) {
+    .mozaic .element:nth-child(2) .window {
+        top: 15%;
+    }
+    .mozaic .element:nth-child(4) .window {
+        top: 9%;
+    }
+    .mozaic .element:nth-child(7) .window {
+        top: 9%;
+    }
+    .mozaic .element:nth-child(7) .window .trackList ul li {
+        font-size: 1vw;
+    }
+    .mozaic .element:nth-child(7) .window .trackList ul {
+        padding: 10px 0 10px 40px;
+    }
+    .mozaic .element:nth-child(10) .window {
+        top: 15%;
+    }
+}
+@media (max-width: 500px) {
+    .mozaic .element .window {
+        top: 20%;
+    }
+    .mozaic .element:nth-child(4) .window {
+        top: 15%;
+    }
+    .mozaic .element:nth-child(7) .window {
+        top: 8%;
+    }
+    .mozaic .element:nth-child(7) .window .trackList ul li {
+        line-height: 1.5em;
+        font-size: 13px;
+    }
+}
