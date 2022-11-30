@@ -205,7 +205,7 @@
 }
 @media (max-width: 768px) {
     .review {
-        height: 20vh; /*TUT*/
+        height: 100%;
     }
     .content .about {
         flex-direction: column;
