@@ -1,0 +1,17 @@
+@media (max-width: 500px) {
+    .mozaic .element:nth-child(3),
+    .mozaic .element:nth-child(6),
+    .mozaic .element:nth-child(8),
+    .mozaic .element:nth-child(9),
+    .mozaic .element:nth-child(11),
+    .mozaic .element:nth-child(14) {
+        position: absolute;
+    }
+    .mozaic {
+        padding: 0 10px 0 30px;
+    }
+    .mozaic .element {
+        width: calc(90vw - 20px);
+        height: calc(90vw - 20px);
+    }
+}
