@@ -276,12 +276,12 @@
         font-size: 13px;
     }
 }
-/*@media (max-height: 650px) {
+@media (max-height: 650px) {
     .review {
         height: 100vh;
         padding-top: 40px;
     }
-}*/
+}
 @media (max-height: 500px) {
     .mozaic .element .window .trackList ul li {
         line-height: 1.5em;
