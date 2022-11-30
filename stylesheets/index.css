@@ -1,3 +1,6 @@
+.index {
+    overflow-y: hidden;
+}
 /*Зона приветствия*/
 .welcome {
     width: 100%;
