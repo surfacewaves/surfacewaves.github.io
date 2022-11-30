@@ -245,6 +245,9 @@
     .mozaic .element:nth-child(14) {
         position: absolute;
     }
+    .mozaic .element:nth-child(1) h2 {
+        font-size: 8vw;
+    }
 }
 @media (max-height: 650px) {
     .review {
