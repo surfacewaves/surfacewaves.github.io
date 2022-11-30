@@ -1,0 +1,26 @@
+.mozaic .element .window {
+    top: 15%;
+}
+.mozaic .element:nth-child(5) .window {
+    top: 18%;
+}
+@media (max-width: 768px) {
+    .mozaic .element:nth-child(2) .window {
+        top: 18%;
+    }
+    .mozaic .element:nth-child(4) .window {
+        top: 20%;
+    }
+    .mozaic .element:nth-child(7) .window {
+        top: 9%;
+    }
+}
+@media (max-width: 500px) {
+    .mozaic .element:nth-child(2) .window,
+    .mozaic .element:nth-child(4) .window,
+    .mozaic .element:nth-child(5) .window,
+    .mozaic .element:nth-child(7) .window,
+    .mozaic .element:nth-child(10) .window {
+        top: 25%;
+    }
+}
