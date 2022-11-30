@@ -50,7 +50,7 @@ header .logo a h2 {
     display: flex;
     visibility: hidden;
     opacity: 0;
-    z-index: 10;
+    z-index: 11;
 }
 .navigation.active {
     visibility: visible;
