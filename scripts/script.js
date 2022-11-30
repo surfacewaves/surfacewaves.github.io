@@ -5,9 +5,11 @@ function toggleMenu() {
     const menuToggle = document.querySelector('.menuToggle');
     const navigation = document.querySelector('.navigation');
     const line = document.querySelector('.line');
+    const scrolling = document.querySelector('.scrolling');
     menuToggle.classList.toggle('active');
     navigation.classList.toggle('active');
     line.classList.toggle('active');
+    scrolling.classList.toggle('active');
 }
 function toggleAlbum(n) {
     const button = document.querySelector('.button' + n);
