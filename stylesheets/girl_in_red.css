@@ -1,40 +1,33 @@
 .mozaic .element:nth-child(2) .window {
-    top: 5%;
+    top: 22%;
 }
 .mozaic .element:nth-child(4) .window {
+    top: 25%;
+}
+.mozaic .element:nth-child(5) .window {
     top: 15%;
 }
 @media (max-width: 1000px) {
-    .mozaic .element:nth-child(2) .window {
-        top: 10%;
+    .mozaic .element:nth-child(2) .window,
+    .mozaic .element:nth-child(4) .window {
+        top: 30%;
     }
     .mozaic .element:nth-child(5) .window {
         top: 20%;
     }
-    .mozaic .element:nth-child(7) .window {
-        top: 18%;
-    }
 }
 @media (max-width: 768px) {
-    .mozaic .element:nth-child(2) .window {
-        top: 5%;
-    }
+    .mozaic .element:nth-child(2) .window,
     .mozaic .element:nth-child(4) .window {
-        top: 20%;
+        top: 22%;
     }
     .mozaic .element:nth-child(7) .window {
         top: 10%;
     }
 }
 @media (max-width: 500px) {
-    .mozaic .element .window {
-        top: 20%;
-    }
-    .mozaic .element:nth-child(4) .window,
-    .mozaic .element:nth-child(5) .window {
+    .mozaic .element:nth-child(2) .window,
+    .mozaic .element:nth-child(4) .window {
         top: 25%;
-    }
-    .mozaic .element:nth-child(7) .window {
-        top: 20%;
     }
 }
