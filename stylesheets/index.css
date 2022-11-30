@@ -310,6 +310,9 @@ form p a {
     .welcome .content .links a {
         font-size: 4.5vw;
     }
+    .areaLogin {
+        padding-top: 50px;
+    }
     .areaLogin .login {
         width: 80%;
     }
