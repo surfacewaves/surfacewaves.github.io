@@ -150,13 +150,14 @@
     margin-top: 15px;
 }
 .mozaic .element .window .albumInformation .text .link img {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     object-fit: cover;
     filter: invert(0.5);
 }
 .mozaic .element .window .albumInformation .text .link h4 {
-    padding: 5px 0 0 10px;
+    padding: 2px 0 0 10px;
+    font-size: 15px;
 }
 .mozaic .element .window .albumInformation .close {
     width: 30px;
@@ -247,6 +248,10 @@
     }
     .mozaic .element:nth-child(1) h2 {
         font-size: 8vw;
+    }
+    .mozaic .element .window .trackList ul li {
+        line-height: 1.5em;
+        font-size: 13px;
     }
 }
 @media (max-height: 650px) {
