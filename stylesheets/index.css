@@ -294,6 +294,8 @@ form p a {
     }
     .welcome .content {
         width: 80%;
+        position: relative;
+        top: -20px;
     }
     .welcome .content .text {
         padding: 6vw 5vw 5vw 5vw;
