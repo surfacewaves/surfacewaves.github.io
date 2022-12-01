@@ -10,8 +10,9 @@ body {
     color: #DDDDDD;
 }
 /*Запрет скроллинга страницы при открытии меню/альбома*/
-body.active {
+.scrolling.active {
     overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 @font-face {
     font-family: 'aaa';
