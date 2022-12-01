@@ -20,6 +20,11 @@ header .logo a {
 header .logo a h2 {
     font-size: 30px;
     padding: 8px;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+header .logo a:hover h2 {
+    opacity: 1;
 }
 /*Кнопка меню в правом верхнем углу*/
 .menuToggle {
