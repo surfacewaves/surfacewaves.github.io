@@ -6,11 +6,8 @@
     justify-content: center;
 }
 .bubbles {
-    width: auto;
-    height: auto;
-    /*display: flex;
-    align-items: center;
-    justify-content: center;*/
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 .bubble {
@@ -37,8 +34,8 @@
     opacity: 1;
 }
 .bubble-lana {
-    top: -150px;
-    left: -150px;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
     width: 300px;
     height: 300px;
     background: rgba(221, 221, 221, 0.5) url("../images/lana_del_rey/lana.jpg") no-repeat center;
@@ -47,8 +44,8 @@
 }
 .bubble-nbhd,
 .bubble-girl {
-    top: -160px;
-    left: -320px;
+    top: calc(50% - 160px);
+    left: calc(50% - 320px);
     width: 175px;
     height: 175px;
     background: rgba(221, 221, 221, 0.5) url("../images/neighbourhood/neighbourhood.jpg") no-repeat center;
@@ -56,16 +53,16 @@
     font-size: 30px;
 }
 .bubble-girl {
-    top: 0px;
-    left: 140px;
+    top: calc(50% - 0px);
+    left: calc(50% + 140px);
     background: rgba(221, 221, 221, 0.5) url("../images/girl_in_red/girl.jpg") no-repeat center;
     background-size: 180px;
     font-size: 25px;
 }
 .bubble-monkeys,
 .bubble-mitski {
-    top: 20px;
-    left: -265px;
+    top: calc(50% + 20px);
+    left: calc(50% - 265px);
     width: 125px;
     height: 125px;
     background: rgba(221, 221, 221, 0.5) url("../images/arctic_monkeys/monkeys.jpg") no-repeat center;
@@ -73,14 +70,14 @@
     font-size: 30px;
 }
 .bubble-mitski {
-    top: -130px;
-    left: 145px;
+    top: calc(50% - 130px);;
+    left: calc(50% + 145px);
     background: rgba(221, 221, 221, 0.5) url("../images/mitski/mitski.jpg") no-repeat center;
     background-size: 190px;
 }
 .bubble-aurora {
-    top: -180px;
-    left: 95px;
+    top: calc(50% - 180px);
+    left: calc(50% + 95px);
     width: 75px;
     height: 75px;
     background: rgba(221, 221, 221, 0.5) url("../images/aurora/aurora.jpg") no-repeat center;
@@ -88,46 +85,50 @@
     font-size: 20px;
 }
 @media (max-width: 768px) {
+.area {
+    height: calc(100vh - 40px);
+}
 .bubble-lana {
-    width: 200px;
-    height: 200px;
-    background: rgba(221, 221, 221, 0.5) url("../images/lana_del_rey/lana.jpg") no-repeat center;
+    top: calc(50% - 75px);
+    left: calc(50% - 100px);
+    width: 175px;
+    height: 175px;
     background-size: 350px;
+    font-size: 25px;
 }
 .bubble-nbhd,
 .bubble-girl {
-    top: -120px;
-    left: -220px;
-    width: 125px;
-    height: 125px;
-    background: rgba(221, 221, 221, 0.5) url("../images/neighbourhood/neighbourhood.jpg") no-repeat center;
+    top: calc(50% - 95px);
+    left: calc(50% - 195px);
+    width: 100px;
+    height: 100px;
     background-size: 150px;
+    font-size: 20px;
 }
 .bubble-girl {
-    left: 95px;
-    background: rgba(221, 221, 221, 0.5) url("../images/girl_in_red/girl.jpg") no-repeat center;
+    left: calc(50% + 70px);
     background-size: 130px;
+    font-size: 15px;
 }
 .bubble-monkeys,
 .bubble-mitski {
-    top: 10px;
-    left: -175px;
+    top: calc(50% + 10px);
+    left: calc(50% - 175px);
     width: 75px;
     height: 75px;
-    background: rgba(221, 221, 221, 0.5) url("../images/arctic_monkeys/monkeys.jpg") no-repeat center;
     background-size: 75px;
+    font-size: 20px;
 }
 .bubble-mitski {
-    left: 100px;
-    background: rgba(221, 221, 221, 0.5) url("../images/mitski/mitski.jpg") no-repeat center;
+    left: calc(50% + 75px);
     background-size: 115px;
 }
 .bubble-aurora {
-    top: 75px;
-    left: 65px;
+    top: calc(50% + 75px);
+    left: calc(50% + 45px);
     width: 50px;
     height: 50px;
-    background: rgba(221, 221, 221, 0.5) url("../images/aurora/aurora.jpg") no-repeat center;
     background-size: 60px;
+    font-size: 15px;
 }
 }
