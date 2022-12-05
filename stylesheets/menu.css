@@ -11,7 +11,7 @@ header.active {
     visibility: hidden;
 }
 header .logo {
-    width: 50px;
+    width: 70px;
 }
 header .logo a {
     text-decoration: none;
@@ -19,12 +19,15 @@ header .logo a {
 }
 header .logo a h2 {
     font-size: 30px;
-    padding: 8px;
+    padding: 8px 0 8px 8px;
     opacity: 0.6;
     transition: 0.5s;
 }
 header .logo a:hover h2 {
     opacity: 1;
+}
+header .logo a h2 span {
+    font-size: 15px;
 }
 /*Кнопка меню в правом верхнем углу*/
 .menuToggle {

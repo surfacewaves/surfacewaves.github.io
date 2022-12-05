@@ -119,6 +119,9 @@
     }
 }
 @media (max-width: 768px) {
+    .container {
+        height: calc(100vh - 40px);
+    }
     .container .slider {
         width: 450px;
         height: 250px;
