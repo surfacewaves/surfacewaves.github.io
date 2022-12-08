@@ -243,8 +243,8 @@ footer .copyright h3 {
         height: 25px;
     }
     footer .socials .social::before {
-        width: 25px;
-        height: 25px;
+        width: 0;
+        height: 0;
     }
     footer .socials .social img {
         padding-top: 4px;

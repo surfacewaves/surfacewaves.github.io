@@ -18,19 +18,20 @@
     justify-content: center;
     align-items: center;
     opacity: 1;
-    transition: 1s;
+    transition: 2s;
 }
 .bubble:hover {
     opacity: 0.7;
     transform: rotate(360deg);
 }
-.bubble a {
+.bubbles h3 {
     text-decoration: none;
     color: #DDDDDD;
     opacity: 0;
     transition: 1s;
+    text-align: center;
 }
-.bubble:hover a {
+.bubble:hover h3 {
     opacity: 1;
 }
 .bubble-lana {
@@ -67,13 +68,14 @@
     height: 125px;
     background: rgba(221, 221, 221, 0.5) url("../images/arctic_monkeys/monkeys.jpg") no-repeat center;
     background-size: 125px;
-    font-size: 30px;
+    font-size: 25px;
 }
 .bubble-mitski {
     top: calc(50% - 130px);;
     left: calc(50% + 145px);
     background: rgba(221, 221, 221, 0.5) url("../images/mitski/mitski.jpg") no-repeat center;
     background-size: 190px;
+    font-size: 30px;
 }
 .bubble-aurora {
     top: calc(50% - 180px);
@@ -108,7 +110,6 @@
 .bubble-girl {
     left: calc(50% + 70px);
     background-size: 130px;
-    font-size: 15px;
 }
 .bubble-monkeys,
 .bubble-mitski {
@@ -117,7 +118,7 @@
     width: 75px;
     height: 75px;
     background-size: 75px;
-    font-size: 20px;
+    font-size: 15px;
 }
 .bubble-mitski {
     left: calc(50% + 75px);
@@ -129,6 +130,6 @@
     width: 50px;
     height: 50px;
     background-size: 60px;
-    font-size: 15px;
+    font-size: 13px;
 }
 }
